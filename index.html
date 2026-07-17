@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Época Colonial del Reino de Guatemala</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#f8e8c7,#fffaf0,#e6f5d0);
+    margin:0;
+    padding:30px;
+}
+
+.contenedor{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0px 8px 20px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    color:#8B4513;
+    font-size:42px;
+}
+
+h2{
+    color:#A0522D;
+    border-left:8px solid #DAA520;
+    padding-left:12px;
+}
+
+p{
+    text-align:justify;
+    line-height:1.8;
+    font-size:18px;
+}
+
+ul,ol{
+    font-size:18px;
+    line-height:1.8;
+}
+
+img{
+    display:block;
+    margin:auto;
+    margin-top:30px;
+    width:500px;
+    border-radius:20px;
+    box-shadow:0px 5px 15px rgba(0,0,0,.3);
+}
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    color:gray;
+    font-size:16px;
+}
+ earth-loader {
+  --watercolor: #3344c1;
+  --landcolor: #7cc133;
+  width: 7.5em;
+  height: 7.5em;
+  background-color: var(--watercolor);
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow:
+    inset 0em 0.5em rgb(255, 255, 255, 0.25),
+    inset 0em -0.5em rgb(0, 0, 0, 0.25);
+  border: solid 0.15em white;
+  animation: startround 1s;
+  animation-iteration-count: 1;
+}
+
+.earth p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.25em;
+  font-size: 1.25em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.earth-loader svg:nth-child(1) {
+  position: absolute;
+  bottom: -2em;
+  width: 7em;
+  height: auto;
+  animation: round1 5s infinite linear 0.75s;
+}
+
+.earth-loader svg:nth-child(2) {
+  position: absolute;
+  top: -3em;
+  width: 7em;
+  height: auto;
+  animation: round1 5s infinite linear;
+}
+.earth-loader svg:nth-child(3) {
+  position: absolute;
+  top: -2.5em;
+  width: 7em;
+  height: auto;
+  animation: round2 5s infinite linear;
+}
+.earth-loader svg:nth-child(4) {
+  position: absolute;
+  bottom: -2.2em;
+  width: 7em;
+  height: auto;
+  animation: round2 5s infinite linear 0.75s;
+}
+
+@keyframes startround {
+  0% {
+    filter: brightness(500%);
+    box-shadow: none;
+  }
+  75% {
+    filter: brightness(500%);
+    box-shadow: none;
+  }
+  100% {
+    filter: brightness(100%);
+    box-shadow:
+      inset 0em 0.5em rgb(255, 255, 255, 0.25),
+      inset 0em -0.5em rgb(0, 0, 0, 0.25);
+  }
+}
+
+@keyframes round1 {
+  0% {
+    left: -2em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+  30% {
+    left: -6em;
+    opacity: 100%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  31% {
+    left: -6em;
+    opacity: 0%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  35% {
+    left: 7em;
+    opacity: 0%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  45% {
+    left: 7em;
+    opacity: 100%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  100% {
+    left: -2em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+}
+
+@keyframes round2 {
+  0% {
+    left: 5em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+  75% {
+    left: -7em;
+    opacity: 100%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  76% {
+    left: -7em;
+    opacity: 0%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  77% {
+    left: 8em;
+    opacity: 0%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  80% {
+    left: 8em;
+    opacity: 100%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  100% {
+    left: 5em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+}
+radio-group {
+  display: flex;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  padding: 4px;
+  border-radius: 25px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  animation: slide-in 0.6s ease-out;
+  width: 280px;
+  height: 40px;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Indicador deslizante de fondo */
+.slider {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  background: #fff;
+  border-radius: 25px;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.15),
+    0 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.radio-option {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.radio-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  border-radius: 25px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.radio-option input[type="radio"]:checked + .radio-label {
+  color: #667eea;
+  text-shadow: none;
+}
+
+.radio-label:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Efecto de brillo al pasar el mouse */
+.radio-label::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.radio-label:hover::before {
+  opacity: 1;
+}
+
+/* Animación de entrada escalonada */
+.radio-option {
+  animation: fade-in 0.5s ease-out backwards;
+}
+
+.radio-option:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.radio-option:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.radio-option:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ajuste automático del slider */
+.radio-group:has(#option1:checked) .slider {
+  left: 4px;
+  width: calc(33.333% - 2.67px);
+}
+
+.radio-group:has(#option2:checked) .slider {
+  left: calc(33.333% + 1.33px);
+  width: calc(33.333% - 2.67px);
+}
+
+.radio-group:has(#option3:checked) .slider {
+  left: calc(66.666% - 1.33px);
+  width: calc(33.333% - 2.67px);
+}
+
+/* Efecto de pulso en el slider */
+@keyframes pulse {
+  0% {
+    box-shadow:
+      0 3px 12px rgba(0, 0, 0, 0.15),
+      0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow:
+      0 5px 20px rgba(102, 126, 234, 0.3),
+      0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  100% {
+    box-shadow:
+      0 3px 12px rgba(0, 0, 0, 0.15),
+      0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.radio-option input[type="radio"]:checked ~ .slider {
+  animation: pulse 0.6s ease-out;
+}
+
+/* Brillo decorativo en el contenedor */
+.radio-group::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  border-radius: 50px;
+  z-index: -1;
+  animation: shine 3s linear infinite;
+  opacity: 0;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+h1{
+    text-align:center;
+    color:#8B4513;
+    font-size:42px;
+    animation:flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+.contenedor{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0px 8px 20px rgba(0,0,0,.2);
+    animation:entrada 1.5s ease;
+}
+
+@keyframes entrada{
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+li{
+    transition:.4s;
+}
+
+li:hover{
+    color:#A0522D;
+    transform:translateX(12px);
+}
+img{
+    display:block;
+    margin:auto;
+    margin-top:30px;
+    width:500px;
+    border-radius:20px;
+    box-shadow:0px 5px 15px rgba(0,0,0,.3);
+    animation:respirar 4s infinite ease-in-out;
+}
+
+img:hover{
+    transform:scale(1.08);
+}
+
+@keyframes respirar{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+h2{
+    color:#A0522D;
+    border-left:8px solid #DAA520;
+    padding-left:12px;
+    transition:.4s;
+}
+
+h2:hover{
+    color:#c96d00;
+    transform:translateX(10px);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>🏰 La Época Colonial del Reino de Guatemala</h1>
+
+<p>
+La época colonial del <strong>Reino de Guatemala</strong> comenzó en el siglo XVI después de la conquista española y se extendió hasta la independencia de Centroamérica en 1821. 🌎 Durante este período, el Reino de Guatemala formó parte del Imperio Español y estuvo gobernado por la Capitanía General de Guatemala.
+</p>
+
+<p>
+El territorio incluía lo que actualmente son Guatemala, El Salvador, Honduras, Nicaragua, Costa Rica y el estado mexicano de Chiapas. Durante esta época se desarrollaron ciudades, iglesias, caminos y centros de comercio que marcaron la historia de la región. ⛪🌿
+</p>
+
+<h2>👑 Organización política</h2>
+
+<ul>
+<li>👑 El rey de España era la máxima autoridad.</li>
+<li>🏛️ La Capitanía General administraba el territorio.</li>
+<li>⚖️ La Real Audiencia impartía justicia.</li>
+<li>📜 Los cabildos gobernaban las ciudades importantes.</li>
+<li>🛡️ Existían gobernadores y autoridades locales encargadas del orden.</li>
+</ul>
+
+<h2>🌾 Economía colonial</h2>
+
+<p>
+La economía dependía principalmente de la agricultura, la ganadería y el comercio con España. Los productos más importantes fueron:
+</p>
+
+<ul>
+<li>🌾 Maíz</li>
+<li>🌱 Cacao</li>
+<li>☕ Añil</li>
+<li>🐄 Ganado</li>
+<li>🥥 Azúcar</li>
+<li>🌳 Madera</li>
+</ul>
+
+<p>
+Gran parte del trabajo era realizado por los pueblos indígenas y, en algunos lugares, también por personas esclavizadas de origen africano.
+</p>
+
+<h2>🏛️ Sociedad colonial</h2>
+
+<p>
+La sociedad colonial estaba organizada en grupos sociales conocidos como castas. Cada grupo tenía diferentes derechos y oportunidades.
+</p>
+
+<ul>
+
+<li>👑 Españoles peninsulares: nacidos en España y ocupaban los cargos más importantes.</li>
+
+<li>🎖️ Criollos: hijos de españoles nacidos en América.</li>
+
+<li>🤝 Mestizos: descendientes de españoles e indígenas.</li>
+
+<li>🏹 Pueblos indígenas: conservaban muchas de sus tradiciones, aunque también fueron obligados a adoptar costumbres españolas.</li>
+
+<li>🌍 Personas africanas y afrodescendientes: participaron principalmente en trabajos agrícolas y domésticos.</li>
+
+</ul>
+
+<h2>⛪ Cultura y religión</h2>
+
+<p>
+La religión católica tuvo una gran influencia durante la colonia. Se construyeron iglesias, conventos y escuelas administradas por órdenes religiosas. Además, muchas tradiciones españolas se mezclaron con las costumbres indígenas, dando origen a una cultura muy rica que aún puede observarse en las fiestas, la gastronomía y las artesanías. 🎭🎶
+</p>
+
+<h2>🏗️ Construcciones importantes</h2>
+
+<ol>
+
+<li>⛪ Iglesias y catedrales.</li>
+
+<li>🏰 Palacios de gobierno.</li>
+
+<li>🏫 Conventos y colegios.</li>
+
+<li>🪨 Calles empedradas y plazas centrales.</li>
+
+<li>🌉 Puentes y caminos para facilitar el comercio.</li>
+
+</ol>
+
+<h2>📚 Aportes de la época colonial</h2>
+
+<ul>
+
+<li>📖 Fundación de escuelas y centros educativos.</li>
+
+<li>🏛️ Construcción de ciudades que aún existen.</li>
+
+<li>🎨 Desarrollo del arte barroco y la arquitectura colonial.</li>
+
+<li>🧵 Elaboración de artesanías tradicionales.</li>
+
+<li>🎉 Celebraciones religiosas y culturales que continúan hasta la actualidad.</li>
+
+</ul>
+
+<h2>⭐ Curiosidades</h2>
+
+<ul>
+
+<li>🏛️ La ciudad de Antigua Guatemala fue la capital del Reino de Guatemala durante gran parte de la época colonial.</li>
+
+<li>🌋 Varios terremotos dañaron la ciudad, lo que llevó al traslado de la capital a la actual Ciudad de Guatemala.</li>
+
+<li>📜 La independencia de Centroamérica fue proclamada el 15 de septiembre de 1821, marcando el fin del período colonial.</li>
+
+</ul>
+
+<img src="epoca colonial.png" alt="epoca Colonial del Reino de Guatemala">
+
+<footer>
+📚 Historia de Centroamérica • Reino de Guatemala • Proyecto Escolar Barrio El Calvario 2026
+</footer>
+
+</div>
+
+</body>
+</html>
